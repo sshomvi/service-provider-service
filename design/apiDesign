@@ -1,0 +1,138 @@
+
+=================== Get All
+URL - http://localhost:8085/sps
+Request Method - GET
+
+Response:
+[
+    {
+        "id": 1,
+        "spCode": "s001",
+        "spShortname": "VT",
+        "spDescription": "Vocational Training",
+        "active": true,
+        "createDateTime": "2019-07-19T10:27:46.464",
+        "updateDateTime": "2019-07-19T10:27:46.464"
+    },
+    {
+        "id": 2,
+        "spCode": "s002",
+        "spShortname": "SA",
+        "spDescription": "Seeding Authority",
+        "active": true,
+        "createDateTime": "2019-07-19T10:27:46.464",
+        "updateDateTime": "2019-07-19T10:27:46.464"
+    },
+    {
+        "id": 3,
+        "spCode": "s003",
+        "spShortname": "TA",
+        "spDescription": "Trees Authority",
+        "active": true,
+        "createDateTime": "2019-07-19T10:27:46.464",
+        "updateDateTime": "2019-07-19T10:27:46.464"
+    }
+]
+
+
+=================== Get sp by id
+
+URL - http://localhost:8085/sps/{id}
+Request Method - GET
+
+Response:
+{
+    "id": 3,
+    "spCode": "s003",
+    "spShortname": "TA",
+    "spDescription": "Trees Authority",
+    "active": true,
+    "createDateTime": "2019-07-19T10:27:46.464",
+    "updateDateTime": "2019-07-19T10:27:46.464"
+}
+
+
+=================== Get sp by code
+URL - localhost:8085/sps/{spCode}/spCode
+Request Method - GET
+
+Response:
+{
+    "id": 3,
+    "spCode": "s003",
+    "spShortname": "TA",
+    "spDescription": "Trees Authority",
+    "active": true,
+    "createDateTime": "2019-07-19T10:27:46.464",
+    "updateDateTime": "2019-07-19T10:27:46.464"
+}
+
+
+=================== Create sp
+URL - http://localhost:8085/sps
+Request Method - POST
+
+Request:
+{
+    "id": 1,
+    "spCode": "s001",
+    "spShortname": "VT",
+    "spDescription": "Vocational Training",
+    "active": true
+}
+
+Response:
+
+{
+    "id": 1,
+    "spCode": "s001",
+    "spShortname": "VT",
+    "spDescription": "Vocational Training",
+    "active": true,
+    "createDateTime": "2019-07-19T10:27:46.464",
+    "updateDateTime": "2019-07-19T10:27:46.464"
+}
+
+
+=================== Update sp
+
+URL - http://localhost:8085/sps/{spId}
+Request Method - PUT
+
+Request:
+{
+    "id": 1,
+    "spCode": "s001",
+    "spShortname": "VT",
+    "spDescription": "Vocational Training",
+    "active": true
+}
+
+Response:
+{
+    "id": 1,
+    "spCode": "s001",
+    "spShortname": "VT",
+    "spDescription": "Vocational Training",
+    "active": true,
+    "createDateTime": "2019-07-19T10:27:46.464",
+    "updateDateTime": "2019-07-19T10:27:46.464"
+}
+
+=================== Delete sp
+URL - http://localhost:8085/sps/1
+Request Method - DELETE
+
+
+Response:
+{
+    "Status": "Delete Successful"
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
